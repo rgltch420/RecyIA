@@ -1,7 +1,3 @@
-/* ============================================
-   FORGEAI — Industrial Athletic Design System
-   ============================================ */
-
 :root {
   --bg-base: #0a0a0b;
   --bg-panel: #111114;
@@ -38,14 +34,12 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  /* Subtle grid texture */
   background-image:
     linear-gradient(rgba(255,77,28,0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,77,28,0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-/* ─── HEADER ─────────────────────────────── */
 .header {
   border-bottom: 1px solid var(--border);
   background: rgba(10,10,11,0.95);
@@ -111,7 +105,6 @@ body {
 .status-dot.error { background: var(--accent); box-shadow: 0 0 8px var(--accent); }
 .status-dot.loading { background: var(--accent-2); animation: pulse 1s infinite; }
 
-/* ─── MAIN LAYOUT ────────────────────────── */
 .main {
   max-width: 1400px;
   margin: 0 auto;
@@ -122,7 +115,6 @@ body {
   min-height: calc(100vh - 60px);
 }
 
-/* ─── PANELS ─────────────────────────────── */
 .panel {
   background: var(--bg-panel);
   border: 1px solid var(--border);
@@ -152,7 +144,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* ─── FORM GROUPS ────────────────────────── */
 .form-group { margin-bottom: 28px; }
 .form-group + .form-group { border-top: 1px solid var(--border); padding-top: 28px; }
 
@@ -206,7 +197,6 @@ body {
 
 .field input::placeholder { color: var(--text-muted); }
 
-/* ─── BUTTON GROUP ───────────────────────── */
 .btn-group {
   display: flex;
   flex-wrap: wrap;
@@ -238,8 +228,6 @@ body {
   font-weight: 500;
   box-shadow: 0 0 12px var(--accent-glow);
 }
-
-/* ─── EXERCISE LIST ──────────────────────── */
 .exercise-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 10px; }
 
 .exercise-row {
@@ -313,7 +301,6 @@ body {
   background: var(--accent-glow);
 }
 
-/* ─── ANALYZE BUTTON ─────────────────────── */
 .btn-analyze {
   width: 100%;
   background: var(--accent);
@@ -350,7 +337,6 @@ body {
 
 .btn-analyze-icon { font-size: 24px; }
 
-/* ─── EMPTY / LOADING STATES ─────────────── */
 .empty-state {
   display: flex;
   flex-direction: column;
@@ -412,7 +398,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* ─── RESULTS ────────────────────────────── */
 .results { display: flex; flex-direction: column; gap: 20px; }
 
 .score-block {
@@ -457,7 +442,6 @@ body {
   color: var(--text-primary);
 }
 
-/* ─── TABS ───────────────────────────────── */
 .tabs {
   display: flex;
   gap: 4px;
@@ -487,7 +471,6 @@ body {
   border-bottom-color: var(--accent);
 }
 
-/* ─── TAB CONTENT ────────────────────────── */
 .tab-content { min-height: 200px; }
 
 .tab-pane { display: none; }
@@ -498,7 +481,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mejoras list */
 .mejora-item {
   display: flex;
   gap: 14px;
@@ -530,7 +512,6 @@ body {
   line-height: 1.6;
 }
 
-/* Weight progression table */
 .weight-table {
   width: 100%;
   border-collapse: collapse;
@@ -565,7 +546,6 @@ body {
   font-size: 16px;
 }
 
-/* Routine optimized */
 .routine-day {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -594,7 +574,6 @@ body {
 .routine-ex-name { color: var(--text-primary); }
 .routine-ex-sets { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); }
 
-/* Tips */
 .tip-item {
   background: var(--bg-card);
   border-left: 3px solid var(--accent-2);
@@ -615,7 +594,6 @@ body {
   margin-bottom: 6px;
 }
 
-/* Stream box */
 .stream-box {
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -641,16 +619,13 @@ body {
   overflow-y: auto;
 }
 
-/* Utility */
 .hidden { display: none !important; }
 
-/* ─── SCROLLBAR ──────────────────────────── */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-base); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
-/* ─── RESPONSIVE ─────────────────────────── */
 @media (max-width: 1024px) {
   .main {
     grid-template-columns: 1fr;
